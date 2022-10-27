@@ -1,21 +1,33 @@
+.form-control{
+    position: relative;
+display: flex;
+flex-direction: row;
+justify-content: center;
+    background-color: aquamarine;
+}
+
+
 .popover {
     position: absolute;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 100px;
     border: 1px solid black;
     border-radius: 5px;
+    top:109px;
 }
 
-.popover::before{
-    content: "";
-    width: 10px;
-    height: 10px;
-    border: solid black;
-border-width: 1px 0 0 1px;
-transform: translate(-50%, -50%) rotate(45deg);
-position: absolute;
-
+.triangle{
+    border-top: 10px solid black;
+    border-left: 10px solid black;
+    transform: rotate(45deg);
+    width: 0px;
+    height: 0px;
+    position: absolute;
+   
+    
 }
+
+
 
 .popover-title{
     background-color:rgb(185, 181, 181);
@@ -24,8 +36,8 @@ position: absolute;
 .button {
     width: 200px;
     height: 100px;
-    background-color: red;
-    color: white;
+    background-color: rgba(243, 213, 78, 0.911);
+    color: rgb(0, 0, 0);
     cursor: pointer;
 }
 
